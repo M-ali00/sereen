@@ -1,0 +1,22 @@
+/* src/app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utilities extracted from original design */
+.burnished-gold-gradient {
+  background: linear-gradient(135deg, #e9c176 0%, #c5a059 100%);
+}
+.hero-gradient {
+  background: linear-gradient(180deg, rgba(6, 22, 18, 0) 0%, rgba(6, 22, 18, 1) 100%);
+}
+.glass-nav {
+  background: rgba(6, 22, 18, 0.6);
+  backdrop-filter: blur(20px);
+}
+.letter-spacing-cinematic {
+  letter-spacing: -0.02em;
+}
+.evidence-border {
+  border-left: 2px solid #e9c176;
+}

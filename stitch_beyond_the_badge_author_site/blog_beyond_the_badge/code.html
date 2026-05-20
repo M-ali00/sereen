@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#001a41",
+                    "on-secondary": "#333023",
+                    "secondary-container": "#4a4738",
+                    "on-tertiary-fixed-variant": "#304671",
+                    "surface": "#061612",
+                    "error": "#ffb4ab",
+                    "on-secondary-fixed": "#1e1c10",
+                    "primary-fixed-dim": "#e9c176",
+                    "tertiary": "#b0c6f9",
+                    "inverse-on-surface": "#24342e",
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary-container": "#233a65",
+                    "surface-container": "#13231e",
+                    "error-container": "#93000a",
+                    "inverse-primary": "#775a19",
+                    "surface-tint": "#e9c176",
+                    "secondary-fixed": "#e9e2cf",
+                    "surface-container-low": "#0f1f1a",
+                    "primary": "#e9c176",
+                    "on-error": "#690005",
+                    "surface-variant": "#283833",
+                    "secondary": "#ccc6b3",
+                    "primary-container": "#c5a059",
+                    "surface-container-highest": "#283833",
+                    "on-primary-fixed": "#261900",
+                    "surface-bright": "#2c3c37",
+                    "surface-container-high": "#1d2d28",
+                    "tertiary-fixed": "#d8e2ff",
+                    "background": "#061612",
+                    "on-background": "#d4e7df",
+                    "outline": "#9a8f80",
+                    "on-surface-variant": "#d1c5b4",
+                    "surface-container-lowest": "#03110d",
+                    "on-secondary-fixed-variant": "#4a4738",
+                    "on-primary-fixed-variant": "#5d4201",
+                    "on-secondary-container": "#bbb5a3",
+                    "primary-fixed": "#ffdea5",
+                    "surface-dim": "#061612",
+                    "secondary-fixed-dim": "#ccc6b3",
+                    "on-surface": "#d4e7df",
+                    "inverse-surface": "#d4e7df",
+                    "tertiary-container": "#8fa5d6",
+                    "outline-variant": "#4e4639",
+                    "on-primary-container": "#4e3700",
+                    "on-primary": "#412d00",
+                    "tertiary-fixed-dim": "#b0c6f9",
+                    "on-tertiary": "#173059"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Manrope", "sans-serif"],
+                    "label": ["Manrope", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #061612; color: #d4e7df; }
+        .font-serif { font-family: 'Newsreader', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-emerald-950/60 backdrop-blur-md shadow-[0_20px_40px_rgba(212,231,223,0.06)]">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-xl font-serif italic text-amber-200 tracking-widest">
+                SEREEN MORGAN-MURRAY
+            </div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="text-stone-300 hover:text-amber-200 transition-colors font-serif tracking-tighter uppercase" href="#">Home</a>
+<a class="text-stone-300 hover:text-amber-200 transition-colors font-serif tracking-tighter uppercase" href="#">Buy Book</a>
+<a class="text-stone-300 hover:text-amber-200 transition-colors font-serif tracking-tighter uppercase" href="#">About</a>
+<a class="text-amber-400 font-bold border-b border-amber-400/30 pb-1 font-serif tracking-tighter uppercase" href="#">Blog</a>
+<a class="text-stone-300 hover:text-amber-200 transition-colors font-serif tracking-tighter uppercase" href="#">Contact</a>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2 rounded-md font-body font-semibold hover:opacity-90 active:scale-95 transition-all">
+                Order Now
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section: Insights & Advisory -->
+<section class="px-12 max-w-7xl mx-auto mb-24">
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-surface to-surface-container-low p-16 md:p-24">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+<img alt="Vintage typewriter and investigative files" class="w-full h-full object-cover" data-alt="Monochrome close-up of a vintage mechanical typewriter and scattered investigative dossier folders on a dark wooden desk with dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_rLtfIbnftAZnAK872XtN4m2Gw8lJaz6c7yN9P16mn2O9g1acRloH_xkoy6sbo26g3XE_zTAd6u22NhvkGygL-zMzVNsJVHXDyguRRf_YkEb4IFgS2jI_wRek_YGeiz0v4TdD82u4MmKgXNfpxN7LZR6kB08OjLHvdM88v5lJ0TmxwKhlfBprl12cP2FedZ-LkbQ3P53pZfpstXDeRPJMXOfOs2_irKyzK1q3fvlfrhZQLfA8brg7gVvn4LrymfIGLjpIMeJ11UE"/>
+</div>
+<div class="relative z-10 max-w-2xl">
+<span class="font-label uppercase tracking-[0.2em] text-primary text-xs mb-4 block">Case File No. 402</span>
+<h1 class="font-serif text-5xl md:text-7xl font-light tracking-tighter text-on-surface mb-6 leading-tight">
+                        Insights &amp; <span class="italic text-primary">Advisory</span>
+</h1>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed opacity-80 border-l-2 border-primary pl-6 py-2">
+                        Beyond the Badge: Exploring the intersection of high-stakes FDA regulation, technical compliance, and the strategic transition to private advisory.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Topic Filtering Chips -->
+<section class="px-12 max-w-7xl mx-auto mb-16">
+<div class="flex flex-wrap gap-4 items-center">
+<span class="font-label text-[10px] uppercase tracking-widest text-outline">Filter by Inquiry:</span>
+<button class="px-5 py-2 rounded-full bg-surface-container-highest text-on-surface font-label text-xs tracking-wider border border-outline-variant/20">All Files</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant font-label text-xs tracking-wider border border-transparent transition-all">GxP compliance</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant font-label text-xs tracking-wider border border-transparent transition-all">regulatory strategy</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant font-label text-xs tracking-wider border border-transparent transition-all">consulting transitions</button>
+</div>
+</section>
+<!-- Blog Grid -->
+<section class="px-12 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-12">
+<!-- Blog Card 1 -->
+<article class="flex flex-col group">
+<div class="aspect-[4/5] overflow-hidden rounded-lg mb-8 bg-surface-container shadow-[0_20px_40px_rgba(212,231,223,0.06)]">
+<img alt="Justice building or scales" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Exterior of a neoclassical courthouse with stone pillars at dusk, moody atmospheric lighting, deep hunter green and shadow tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDjCXsDjLlKCG27rYYUXNwAjn09ao3c9a3YQtb_-uKiQTboPGRT4O6V1gYAjwbznuBXjI86fQyPOzxgO4_FEGmbwTBvMDGst8uvhT0BSIk47qaq1JMGzfq8r9ZXRntxE9CBECcHNBOuV9zaURmprJtvT42Y6w-5DNP9vj2u5i_gx8wQbfgXB5GaG-WXs09peDp_HlWPBMGBKkgWIPC0IEIwEBivWXkeJD7Gf82KgAXxFFvgXEn04j5p_stJ6Gaimpw1MCMCAUus2E"/>
+</div>
+<div class="flex flex-col flex-grow px-2">
+<div class="flex items-center gap-4 mb-4">
+<time class="font-label text-[10px] uppercase tracking-widest text-outline" datetime="2024-03-15">March 15, 2024</time>
+<span class="w-8 h-[1px] bg-outline-variant/30"></span>
+<span class="font-label text-[10px] uppercase tracking-widest text-primary">Compliance</span>
+</div>
+<h3 class="font-serif text-2xl text-secondary mb-4 leading-snug group-hover:text-primary transition-colors">Decoding GxP: The Invisible Infrastructure of Trust</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-6 line-clamp-3">
+                            A deep dive into why GxP compliance isn't just about paperwork—it's about the fundamental safety of the consumer, viewed through the lens of a former investigator.
+                        </p>
+<a class="mt-auto inline-flex items-center gap-2 font-label text-[11px] uppercase tracking-[0.2em] text-primary hover:text-primary-fixed-dim transition-all group-hover:gap-4" href="#">
+                            Read More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Blog Card 2 -->
+<article class="flex flex-col group">
+<div class="aspect-[4/5] overflow-hidden rounded-lg mb-8 bg-surface-container shadow-[0_20px_40px_rgba(212,231,223,0.06)]">
+<img alt="Chess match representing strategy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A strategic board game or architectural model on a dark table, focused on structural precision and strategic depth, warm gold highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-jy4rRhQ7fH3e0ZxHRJqcE2ELe4jNBcf2iD-NZIWX-m3eh7Bu204oxhaPbo-6C94ZG4c0_sRX9htM-3f9qVY9EOtv6MfpDCg9PATIN6NxHulBoEEMp9tdzWbLjLWG9L29MI349KmuBfviO8SxhQl4DCkMezic1TSgkqb51LgLrPdvOG6ZrD9VylHf_uR8F2Xjq4xxXXwnYe79pXpNdgvvtnGF-lAEHhYkOZhgo7SL1oA41r0VsPqneBJPNdNoPwz9pTX_Y0r6F88"/>
+</div>
+<div class="flex flex-col flex-grow px-2">
+<div class="flex items-center gap-4 mb-4">
+<time class="font-label text-[10px] uppercase tracking-widest text-outline" datetime="2024-02-28">February 28, 2024</time>
+<span class="w-8 h-[1px] bg-outline-variant/30"></span>
+<span class="font-label text-[10px] uppercase tracking-widest text-primary">Strategy</span>
+</div>
+<h3 class="font-serif text-2xl text-secondary mb-4 leading-snug group-hover:text-primary transition-colors">The Pivot: From Enforcement to Strategic Guidance</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-6 line-clamp-3">
+                            Navigating the transition from regulatory enforcement to advisory requires a shift in mindset. Here is how I translated years of inspection data into actionable business strategy.
+                        </p>
+<a class="mt-auto inline-flex items-center gap-2 font-label text-[11px] uppercase tracking-[0.2em] text-primary hover:text-primary-fixed-dim transition-all group-hover:gap-4" href="#">
+                            Read More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Blog Card 3 -->
+<article class="flex flex-col group">
+<div class="aspect-[4/5] overflow-hidden rounded-lg mb-8 bg-surface-container shadow-[0_20px_40px_rgba(212,231,223,0.06)]">
+<img alt="Professional documents and glasses" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern minimalist home office setting with leather desk pad, fountain pen, and technical documents, clean analytical aesthetic with deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB24zLmv5ZVsgZlrxR0O6xzUwNpIVaTp1jYK25eD1uUiVMITtvC2WN0IagB-5fUPS6faXLVzE9vZMVmbiAxpeK_IEHeLB0DTQwNmpgaFSgd2Rw5MFO89kQqs53YSZWZPFD-qc9AFrFLK7tqeNW8EboyaP4Kf8ZFesO132eFzPba43AinBOlAuzKpLhva8OgFMBGqGSg-zUToKuNY1gAGjLahfUrJ2Kjgi_wCQ8LHww4ej8zMiLvTVS79atowWaRMG3oAGHYlnAlFEw"/>
+</div>
+<div class="flex flex-col flex-grow px-2">
+<div class="flex items-center gap-4 mb-4">
+<time class="font-label text-[10px] uppercase tracking-widest text-outline" datetime="2024-01-12">January 12, 2024</time>
+<span class="w-8 h-[1px] bg-outline-variant/30"></span>
+<span class="font-label text-[10px] uppercase tracking-widest text-primary">Transitions</span>
+</div>
+<h3 class="font-serif text-2xl text-secondary mb-4 leading-snug group-hover:text-primary transition-colors">Consulting 101: Bridging the Regulatory Gap</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-6 line-clamp-3">
+                            For former agents looking to enter the private sector, the first 90 days are critical. A manual for maintaining integrity while delivering high-value advisory.
+                        </p>
+<a class="mt-auto inline-flex items-center gap-2 font-label text-[11px] uppercase tracking-[0.2em] text-primary hover:text-primary-fixed-dim transition-all group-hover:gap-4" href="#">
+                            Read More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Blog Card 4 (Featured Horizontal) -->
+<article class="md:col-span-2 lg:col-span-3 flex flex-col md:flex-row bg-surface-container-low rounded-lg overflow-hidden border-l-4 border-primary mt-12">
+<div class="md:w-1/2 aspect-video md:aspect-auto">
+<img alt="Regulatory documents and audit trail" class="w-full h-full object-cover" data-alt="Stacks of financial and regulatory ledgers on a mahogany table, magnifying glass placed on an open page, cinematic lighting with warm amber hues" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqZbcZ8w1VrZ169Vdez4QfNdCgrtPDH6j8cnxC-Tw_K3QtFbZeh1APDQwrLz2EpBoqP8sdpD9oDs6ZOghH4CQjqXguxsN3QHuIDpYXCtmBAbE5u4R0SDDdmDMeZ33Pz3C2bIvrGeujv8-sPW2v1EzRBB5aHmwr_4bhNVzOgrJV5r3k-xkRpAeyyTx8WbE9M9QeiTaxdMQJQD13_WGM9kqI5SAi7rwXodkDTs9WJZmzJdx6tuQFUodgsj_0Yodo95cVcHstLqOIScg"/>
+</div>
+<div class="md:w-1/2 p-12 flex flex-col justify-center">
+<div class="flex items-center gap-4 mb-6">
+<span class="px-3 py-1 bg-primary/10 text-primary font-label text-[9px] uppercase tracking-widest rounded-sm border border-primary/20">Featured Dossier</span>
+<time class="font-label text-[10px] uppercase tracking-widest text-outline" datetime="2023-12-05">December 5, 2023</time>
+</div>
+<h2 class="font-serif text-4xl text-on-surface mb-6 leading-tight">Post-Market Surveillance: The Investigative Truth</h2>
+<p class="font-body text-base text-on-surface-variant leading-relaxed mb-8 opacity-90">
+                            Understanding the persistence of oversight. This long-form editorial dissects the lifecycle of pharmaceutical products once they leave the manufacturing floor and enter the complexities of global markets.
+                        </p>
+<div class="flex items-center gap-6">
+<a class="inline-flex items-center gap-2 font-label text-[11px] uppercase tracking-[0.2em] text-primary hover:text-primary-fixed-dim transition-all" href="#">
+                                Read the Full File <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Blog Card 5 -->
+<article class="flex flex-col group">
+<div class="aspect-[4/5] overflow-hidden rounded-lg mb-8 bg-surface-container shadow-[0_20px_40px_rgba(212,231,223,0.06)]">
+<img alt="Strategic meeting room" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Top down view of a high-end corporate boardroom table with minimalist pens and tablets, sophisticated lighting casting long shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmRHCQAS3t1diwXtR9C1bnq9-Xu6137pXx5Eyd8E3KRjBNlJM56PXz_VZH5lhdt8dTfA7OTwzd6pm6KUBLiJwNrWpwABPr5kLhMUB4vwbuoypfLb51dQEcmH9Wvs3wGfVGXsn2IrwIgF1IUm_avKuGLtpoYeYn8bOM6Q9FJ-9SG6XvsS1o7gIZzYQD_CodsoHrVo48eMP-AA2txOsaE_-mDW4PeV5wCvJFWtMrmME5Z9ODpiczajz-z090VBXQ1KMrLDKSF6lqWAE"/>
+</div>
+<div class="flex flex-col flex-grow px-2">
+<div class="flex items-center gap-4 mb-4">
+<time class="font-label text-[10px] uppercase tracking-widest text-outline" datetime="2023-11-20">November 20, 2023</time>
+<span class="w-8 h-[1px] bg-outline-variant/30"></span>
+<span class="font-label text-[10px] uppercase tracking-widest text-primary">Compliance</span>
+</div>
+<h3 class="font-serif text-2xl text-secondary mb-4 leading-snug group-hover:text-primary transition-colors">Risk Management as a Core Philosophy</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-6 line-clamp-3">
+                            Exploring why 'Quality by Design' isn't just a regulatory buzzword, but a survival strategy for biotech startups in an increasingly scrutinized landscape.
+                        </p>
+<a class="mt-auto inline-flex items-center gap-2 font-label text-[11px] uppercase tracking-[0.2em] text-primary hover:text-primary-fixed-dim transition-all group-hover:gap-4" href="#">
+                            Read More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Blog Card 6 -->
+<article class="flex flex-col group">
+<div class="aspect-[4/5] overflow-hidden rounded-lg mb-8 bg-surface-container shadow-[0_20px_40px_rgba(212,231,223,0.06)]">
+<img alt="Light through an open window" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sunlight filtering through industrial metal-framed windows onto an empty factory floor, highlighting dust particles, quiet contemplative mood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH9q8qnG_5ru3eoysKWVeikdBY8hFYPrKVhPt3f2K52fbhdqGBn0A99EOuh10vMYZcLbpQv54flWu31uqNsfS1OZgOXSLERkABZ3JtSZAKCypfdFT2_4rhDQiRigoDkaox5FHJgkone5HVUMMUqAuHBU7Y4TzDdCH-XaaPc3WaR_49spuWzIDwD4YnijVkHcBeErMmEynORwPXfUkJkVXyMFrf_YTGFrUUJrSU0fKrXM7riN-nbXjDwoyjGcZRwcBUZlYiZu3Ok54"/>
+</div>
+<div class="flex flex-col flex-grow px-2">
+<div class="flex items-center gap-4 mb-4">
+<time class="font-label text-[10px] uppercase tracking-widest text-outline" datetime="2023-10-05">October 5, 2023</time>
+<span class="w-8 h-[1px] bg-outline-variant/30"></span>
+<span class="font-label text-[10px] uppercase tracking-widest text-primary">Advisory</span>
+</div>
+<h3 class="font-serif text-2xl text-secondary mb-4 leading-snug group-hover:text-primary transition-colors">The Auditor's Eye: Spotting Blind Spots</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-6 line-clamp-3">
+                            How to train your team to look beyond the surface level during self-inspections. Developing an instinct for identifying gaps before they become systemic failures.
+                        </p>
+<a class="mt-auto inline-flex items-center gap-2 font-label text-[11px] uppercase tracking-[0.2em] text-primary hover:text-primary-fixed-dim transition-all group-hover:gap-4" href="#">
+                            Read More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+</section>
+<!-- Newsletter / Evidence Submission -->
+<section class="mt-32 px-12 max-w-4xl mx-auto">
+<div class="bg-surface-container-high p-12 text-center rounded-lg relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/5 to-transparent pointer-events-none"></div>
+<h4 class="font-serif text-3xl text-primary mb-4 italic">Join the Investigative Circle</h4>
+<p class="font-body text-on-surface-variant mb-8 max-w-md mx-auto">
+                    Subscribe to receive monthly briefings on regulatory shifts and advisory insights directly from the desk of Sereen Murray-Morgan.
+                </p>
+<form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+<input class="flex-grow bg-surface border border-outline-variant/30 rounded-md px-4 py-3 text-on-surface focus:ring-1 focus:ring-primary focus:outline-none placeholder:text-stone-600 font-body" placeholder="Enter your professional email" type="email"/>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-3 rounded-md font-label uppercase tracking-widest text-xs font-bold hover:opacity-90 transition-all" type="submit">
+                        Subscribe
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-32 bg-emerald-950 border-t border-white/5">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-24 max-w-screen-2xl mx-auto">
+<div class="flex flex-col gap-6">
+<div class="text-lg font-serif text-amber-100">SEREEN MORGAN-MURRAY</div>
+<p class="font-sans uppercase tracking-widest text-[10px] text-stone-500 max-w-xs leading-relaxed">
+                    A legacy of precision. A future of strategy. Providing high-stakes advisory for those navigating the complexities of modern regulation.
+                </p>
+</div>
+<div class="flex flex-col gap-6">
+<h5 class="font-sans uppercase tracking-widest text-[10px] text-amber-200">Resources</h5>
+<nav class="flex flex-col gap-3">
+<a class="font-sans uppercase tracking-widest text-[10px] text-stone-500 hover:text-amber-100 underline underline-offset-4 transition-all" href="#">Privacy Policy</a>
+<a class="font-sans uppercase tracking-widest text-[10px] text-stone-500 hover:text-amber-100 underline underline-offset-4 transition-all" href="#">Terms of Service</a>
+<a class="font-sans uppercase tracking-widest text-[10px] text-stone-500 hover:text-amber-100 underline underline-offset-4 transition-all" href="#">Press Kit</a>
+<a class="font-sans uppercase tracking-widest text-[10px] text-stone-500 hover:text-amber-100 underline underline-offset-4 transition-all" href="#">Newsletter</a>
+</nav>
+</div>
+<div class="flex flex-col gap-6 items-end justify-between">
+<div class="flex gap-4">
+<a class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 transition-colors" href="#">
+<span class="material-symbols-outlined text-stone-500 text-sm">share</span>
+</a>
+<a class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 transition-colors" href="#">
+<span class="material-symbols-outlined text-stone-500 text-sm">mail</span>
+</a>
+</div>
+<div class="font-sans uppercase tracking-widest text-[10px] text-stone-500 text-right">
+                    © 2024 SEREEN MORGAN-MURRAY. ALL RIGHTS RESERVED.<br/>
+                    INVESTIGATIVE EDITORIAL CASE FILE NO. 402
+                </div>
+</div>
+</div>
+</footer>
+</body></html>

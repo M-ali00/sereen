@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Secure Acquisition | Beyond the Badge</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#e9c176",
+                        "on-error": "#690005",
+                        "on-primary-container": "#4e3700",
+                        "surface-variant": "#283833",
+                        "on-tertiary": "#173059",
+                        "surface-tint": "#e9c176",
+                        "tertiary-container": "#8fa5d6",
+                        "inverse-surface": "#d4e7df",
+                        "on-primary-fixed": "#261900",
+                        "secondary-fixed-dim": "#ccc6b3",
+                        "error-container": "#93000a",
+                        "tertiary-fixed-dim": "#b0c6f9",
+                        "tertiary-fixed": "#d8e2ff",
+                        "on-tertiary-fixed-variant": "#304671",
+                        "secondary-container": "#4a4738",
+                        "on-surface": "#d4e7df",
+                        "tertiary": "#b0c6f9",
+                        "on-secondary-fixed": "#1e1c10",
+                        "on-surface-variant": "#d1c5b4",
+                        "surface-container-lowest": "#03110d",
+                        "secondary": "#ccc6b3",
+                        "secondary-fixed": "#e9e2cf",
+                        "error": "#ffb4ab",
+                        "surface-container-low": "#0f1f1a",
+                        "surface-bright": "#2c3c37",
+                        "surface-dim": "#061612",
+                        "inverse-on-surface": "#24342e",
+                        "on-background": "#d4e7df",
+                        "surface-container": "#13231e",
+                        "surface": "#061612",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary-container": "#bbb5a3",
+                        "surface-container-highest": "#283833",
+                        "background": "#061612",
+                        "surface-container-high": "#1d2d28",
+                        "primary-container": "#c5a059",
+                        "outline": "#9a8f80",
+                        "on-tertiary-container": "#233a65",
+                        "inverse-primary": "#775a19",
+                        "primary-fixed": "#ffdea5",
+                        "outline-variant": "#4e4639",
+                        "on-primary-fixed-variant": "#5d4201",
+                        "on-primary": "#412d00",
+                        "primary": "#e9c176",
+                        "on-tertiary-fixed": "#001a41",
+                        "on-secondary-fixed-variant": "#4a4738",
+                        "on-secondary": "#333023"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #061612;
+            color: #d4e7df;
+        }
+        .font-serif { font-family: 'Newsreader', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        input::placeholder { color: #9a8f80; opacity: 0.5; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-[#061612] dark:bg-[#061612] docked full-width top-0 z-50">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-serif tracking-tighter text-[#e9c176]">The Investigative Editorial</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#d4e7df] opacity-80 hover:text-[#e9c176] transition-colors duration-300 font-sans" href="#">Books</a>
+<a class="text-[#d4e7df] opacity-80 hover:text-[#e9c176] transition-colors duration-300 font-sans" href="#">Dossiers</a>
+<a class="text-[#d4e7df] opacity-80 hover:text-[#e9c176] transition-colors duration-300 font-sans" href="#">Archives</a>
+<a class="text-[#d4e7df] opacity-80 hover:text-[#e9c176] transition-colors duration-300 font-sans" href="#">About</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="hidden md:block text-[#e9c176] font-sans text-sm tracking-widest uppercase hover:opacity-80 transition-opacity">Secure Checkout</button>
+<div class="relative scale-95 duration-200 active:opacity-80 cursor-pointer">
+<span class="material-symbols-outlined text-[#e9c176]">shopping_bag</span>
+</div>
+</div>
+</div>
+</nav>
+<main class="flex-grow max-w-7xl mx-auto w-full px-8 py-12">
+<!-- Breadcrumb / System Status -->
+<div class="mb-12">
+<span class="text-primary font-label text-[0.75rem] tracking-widest uppercase">Acquisition Protocol / Checkout / Case File No. 882</span>
+<h1 class="text-4xl md:text-5xl font-serif text-on-surface mt-2 tracking-tight">Final Authorization</h1>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Information Intake (Shipping & Payment) -->
+<div class="lg:col-span-7 space-y-12">
+<!-- Shipping Intelligence -->
+<section class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-8 h-px bg-primary"></div>
+<h2 class="text-xl font-serif text-primary italic">Shipping Intelligence</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="md:col-span-2">
+<label class="block text-primary font-label text-[0.75rem] tracking-widest uppercase mb-2">Full Name (Legal Proxy)</label>
+<input class="w-full bg-surface-container-low border-0 outline outline-1 outline-outline-variant/15 focus:outline-primary/50 text-on-surface p-4 rounded-md transition-all" placeholder="REDACTED" type="text"/>
+</div>
+<div class="md:col-span-2">
+<label class="block text-primary font-label text-[0.75rem] tracking-widest uppercase mb-2">Street Address</label>
+<input class="w-full bg-surface-container-low border-0 outline outline-1 outline-outline-variant/15 focus:outline-primary/50 text-on-surface p-4 rounded-md transition-all" placeholder="123 Archive Way" type="text"/>
+</div>
+<div>
+<label class="block text-primary font-label text-[0.75rem] tracking-widest uppercase mb-2">City</label>
+<input class="w-full bg-surface-container-low border-0 outline outline-1 outline-outline-variant/15 focus:outline-primary/50 text-on-surface p-4 rounded-md transition-all" placeholder="D.C." type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block text-primary font-label text-[0.75rem] tracking-widest uppercase mb-2">Postal</label>
+<input class="w-full bg-surface-container-low border-0 outline outline-1 outline-outline-variant/15 focus:outline-primary/50 text-on-surface p-4 rounded-md transition-all" placeholder="20001" type="text"/>
+</div>
+<div>
+<label class="block text-primary font-label text-[0.75rem] tracking-widest uppercase mb-2">Country</label>
+<select class="w-full bg-surface-container-low border-0 outline outline-1 outline-outline-variant/15 focus:outline-primary/50 text-on-surface p-4 rounded-md transition-all">
+<option>United States</option>
+<option>United Kingdom</option>
+<option>European Union</option>
+</select>
+</div>
+</div>
+</div>
+</section>
+<!-- Transaction Security -->
+<section class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-8 h-px bg-primary"></div>
+<h2 class="text-xl font-serif text-primary italic">Transaction Security</h2>
+</div>
+<div class="bg-surface-container p-8 rounded-lg outline outline-1 outline-outline-variant/15 space-y-6">
+<div>
+<label class="block text-primary font-label text-[0.75rem] tracking-widest uppercase mb-2">Card Number</label>
+<div class="relative">
+<input class="w-full bg-surface-container-high border-0 outline outline-1 outline-outline-variant/15 focus:outline-primary/50 text-on-surface p-4 rounded-md transition-all" placeholder="0000 0000 0000 0000" type="text"/>
+<div class="absolute right-4 top-1/2 -translate-y-1/2 flex gap-2">
+<span class="material-symbols-outlined text-outline opacity-40">lock</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div>
+<label class="block text-primary font-label text-[0.75rem] tracking-widest uppercase mb-2">Expiry Date</label>
+<input class="w-full bg-surface-container-high border-0 outline outline-1 outline-outline-variant/15 focus:outline-primary/50 text-on-surface p-4 rounded-md transition-all" placeholder="MM/YY" type="text"/>
+</div>
+<div>
+<label class="block text-primary font-label text-[0.75rem] tracking-widest uppercase mb-2">Security Code (CVV)</label>
+<input class="w-full bg-surface-container-high border-0 outline outline-1 outline-outline-variant/15 focus:outline-primary/50 text-on-surface p-4 rounded-md transition-all" placeholder="***" type="text"/>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Order Summary Sidebar -->
+<aside class="lg:col-span-5">
+<div class="bg-surface-container-low rounded-lg p-8 sticky top-24 outline outline-1 outline-outline-variant/15">
+<h3 class="text-2xl font-serif text-on-surface mb-8">Intelligence Manifest</h3>
+<div class="flex gap-6 pb-8 mb-8 border-b border-outline-variant/20">
+<div class="w-24 h-32 bg-surface-container-highest flex-shrink-0 relative group">
+<img class="w-full h-full object-cover rounded-sm shadow-2xl" data-alt="Close-up of a premium hardbound book titled Beyond the Badge, with gold foil lettering on a deep green leather texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPPnsd0lusLX-skLGNrSKvAOqu8FlvYDqWghHK0V-bsujQ3JeT1L_chP4PmxSvhLbhcax935ZsM5vPU7OL4QhJdMINIQNFRIFdqU6fA1QBCyPckT7MguTkwNPv7osKx7DWu_NloAvLzJkBrQejyXkmE-jWijLHAVh88Vcnk8Lu7_axg1FTRZrqijZBw1wZL9vjsWFg6_f1avU8AFt6lAK9IF8_UtxFFV00-asNHz2xIsPwGC7bubpj-QQiWiXZlqciKA-SBPyIMJA"/>
+</div>
+<div class="flex flex-col justify-center">
+<h4 class="text-lg font-serif leading-tight">Beyond the Badge</h4>
+<p class="text-sm text-outline font-label uppercase tracking-widest mt-1">Hardcover / First Edition</p>
+<div class="mt-4 flex items-center gap-4">
+<span class="text-primary font-bold">$42.00</span>
+<span class="text-xs text-outline opacity-60">Qty: 01</span>
+</div>
+</div>
+</div>
+<div class="space-y-4 font-label text-sm tracking-wide">
+<div class="flex justify-between text-outline">
+<span>Subtotal</span>
+<span>$42.00</span>
+</div>
+<div class="flex justify-between text-outline">
+<span>Shipping Intel</span>
+<span>$8.50</span>
+</div>
+<div class="flex justify-between text-outline">
+<span>Regulatory Tax</span>
+<span>$3.40</span>
+</div>
+<div class="pt-4 flex justify-between text-xl font-serif text-on-surface">
+<span>Total Acquisition</span>
+<span class="text-primary">$53.90</span>
+</div>
+</div>
+<div class="mt-12">
+<button class="w-full bg-gradient-to-r from-primary to-primary-container text-on-primary font-bold font-body py-5 rounded-md text-sm tracking-[0.2em] uppercase shadow-lg hover:brightness-110 active:scale-[0.98] transition-all">
+                            Complete Purchase
+                        </button>
+<p class="mt-4 text-[0.65rem] text-center text-outline uppercase tracking-widest opacity-60">
+                            By clicking, you authorize the decryption and processing of this transaction.
+                        </p>
+</div>
+<!-- Evidence Block Signature -->
+<div class="mt-12 pl-6 border-l-2 border-primary">
+<p class="font-serif text-sm italic text-on-surface-variant leading-relaxed">
+                            "The pursuit of truth is a heavy burden, but the cost of ignorance is far greater."
+                        </p>
+<p class="font-label text-[0.6rem] uppercase tracking-tighter mt-2 text-primary">Chief Investigator — Memo 01</p>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#13231e] py-12 mt-20">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 w-full max-w-7xl mx-auto gap-4">
+<div class="text-lg font-serif text-[#e9c176]">Investigative Editorial</div>
+<div class="flex flex-wrap justify-center gap-8 font-sans text-[0.75rem] tracking-widest uppercase">
+<a class="text-[#d4e7df] opacity-60 hover:opacity-100 transition-opacity" href="#">Privacy Policy</a>
+<a class="text-[#d4e7df] opacity-60 hover:opacity-100 transition-opacity" href="#">Terms of Service</a>
+<a class="text-[#d4e7df] opacity-60 hover:opacity-100 transition-opacity" href="#">Shipping Intelligence</a>
+<a class="text-[#d4e7df] opacity-60 hover:opacity-100 transition-opacity" href="#">Contact Archive</a>
+</div>
+<div class="text-[#d4e7df] opacity-40 font-sans text-[0.6rem] tracking-widest uppercase text-center md:text-right">
+                © 2024 Investigative Editorial. All Rights Reserved. Private Dossier Security Enabled.
+            </div>
+</div>
+</footer>
+</body></html>

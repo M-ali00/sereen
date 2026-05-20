@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#001a41",
+                        "on-secondary": "#333023",
+                        "secondary-container": "#4a4738",
+                        "on-tertiary-fixed-variant": "#304671",
+                        "surface": "#061612",
+                        "error": "#ffb4ab",
+                        "on-secondary-fixed": "#1e1c10",
+                        "primary-fixed-dim": "#e9c176",
+                        "tertiary": "#b0c6f9",
+                        "inverse-on-surface": "#24342e",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-container": "#233a65",
+                        "surface-container": "#13231e",
+                        "error-container": "#93000a",
+                        "inverse-primary": "#775a19",
+                        "surface-tint": "#e9c176",
+                        "secondary-fixed": "#e9e2cf",
+                        "surface-container-low": "#0f1f1a",
+                        "primary": "#e9c176",
+                        "on-error": "#690005",
+                        "surface-variant": "#283833",
+                        "secondary": "#ccc6b3",
+                        "primary-container": "#c5a059",
+                        "surface-container-highest": "#283833",
+                        "on-primary-fixed": "#261900",
+                        "surface-bright": "#2c3c37",
+                        "surface-container-high": "#1d2d28",
+                        "tertiary-fixed": "#d8e2ff",
+                        "background": "#061612",
+                        "on-background": "#d4e7df",
+                        "outline": "#9a8f80",
+                        "on-surface-variant": "#d1c5b4",
+                        "surface-container-lowest": "#03110d",
+                        "on-secondary-fixed-variant": "#4a4738",
+                        "on-primary-fixed-variant": "#5d4201",
+                        "on-secondary-container": "#bbb5a3",
+                        "primary-fixed": "#ffdea5",
+                        "surface-dim": "#061612",
+                        "secondary-fixed-dim": "#ccc6b3",
+                        "on-surface": "#d4e7df",
+                        "inverse-surface": "#d4e7df",
+                        "tertiary-container": "#8fa5d6",
+                        "outline-variant": "#4e4639",
+                        "on-primary-container": "#4e3700",
+                        "on-primary": "#412d00",
+                        "tertiary-fixed-dim": "#b0c6f9",
+                        "on-tertiary": "#173059"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3, .serif { font-family: 'Newsreader', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .burnished-gold {
+            background: linear-gradient(135deg, #e9c176 0%, #c5a059 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar Implementation -->
+<nav class="fixed top-0 w-full z-50 bg-emerald-950/60 backdrop-blur-md shadow-[0_20px_40px_rgba(212,231,223,0.06)]">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<span class="text-xl font-serif italic text-amber-200 tracking-widest uppercase">SEREEN MORGAN-MURRAY</span>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center gap-8 font-serif tracking-tighter uppercase text-stone-300">
+<a class="text-stone-300 hover:text-amber-200 transition-colors" href="#">Home</a>
+<a class="text-amber-400 font-bold border-b border-amber-400/30 pb-1" href="#">Buy Book</a>
+<a class="text-stone-300 hover:text-amber-200 transition-colors" href="#">About</a>
+<a class="text-stone-300 hover:text-amber-200 transition-colors" href="#">Blog</a>
+<a class="text-stone-300 hover:text-amber-200 transition-colors" href="#">Contact</a>
+</div>
+<button class="burnished-gold text-on-primary px-6 py-2 rounded-md font-body font-semibold tracking-wide uppercase text-sm hover:scale-95 transition-transform">
+                Order Now
+            </button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Section 1: Book Showcase -->
+<section class="max-w-screen-2xl mx-auto px-12 pb-32">
+<div class="flex flex-col lg:flex-row gap-20 items-center">
+<!-- Book Cover Visual -->
+<div class="w-full lg:w-1/2 flex justify-center">
+<div class="relative group">
+<div class="absolute inset-0 bg-primary/10 blur-3xl rounded-full scale-75 group-hover:scale-90 transition-transform duration-700"></div>
+<img alt="Beyond the Badge Book Cover" class="relative z-10 w-[400px] h-auto shadow-[0_30px_60px_rgba(0,0,0,0.5)] transform -rotate-3 hover:rotate-0 transition-transform duration-500 rounded-sm" data-alt="Premium hardcover book titled Beyond the Badge resting on a dark walnut desk with a vintage fountain pen and soft cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXtIpSdwAsa5CnnU7MmdTTatvXwoA6Il06ZYFfkoJJDWVvgMTadgC8NqwjS18Mk2BKIE76J8GYRw0LqLf7wwUjv-pYN_TDnUIWLTM71Zm3d-UjC9wp5H-GoLZ_GG5RPK4U4FsFU2fl8y8YJVnLqRhnSuDeUdzaAnIWV-5cpiIbnXKlySMF0kevZnfOT-tePDXpfxg_2h3RKhiVEuOr0wH9AsAAEwuxoODGBHkxb22rbcEdcgsYH7ZEyaQMi8PBZwL8_-wfMnGCcAk"/>
+</div>
+</div>
+<!-- Book Details Content -->
+<div class="w-full lg:w-1/2 space-y-8">
+<div class="space-y-2">
+<span class="font-label text-[10px] tracking-[0.2em] text-primary uppercase">Dossier Access: Phase One</span>
+<h1 class="text-6xl md:text-7xl font-headline font-bold text-on-surface leading-tight tracking-tighter">Beyond the Badge</h1>
+</div>
+<div class="border-l-2 border-primary pl-6 py-2">
+<p class="text-xl font-headline italic text-on-surface-variant">The definitive investigative editorial on corporate accountability and the price of silence in the pharmaceutical industry.</p>
+</div>
+<p class="text-lg text-on-surface-variant/80 font-body leading-relaxed max-w-xl">
+                        In this high-stakes memoir, former FDA investigator Sereen Morgan-Murray pulls back the curtain on the clandestine world of regulatory oversight. From hidden boardrooms to the front lines of public safety, "Beyond the Badge" is a meticulous record of one woman's pursuit of truth against the machinery of global power.
+                    </p>
+<div class="flex items-end gap-4">
+<span class="text-5xl font-headline font-bold text-primary">$34.99</span>
+<span class="font-label text-xs tracking-widest text-stone-500 pb-2 uppercase">Hardcover Editorial Edition</span>
+</div>
+<div class="flex gap-6 items-center pt-4">
+<div class="flex -space-x-2">
+<span class="material-symbols-outlined text-primary scale-110">star</span>
+<span class="material-symbols-outlined text-primary scale-110">star</span>
+<span class="material-symbols-outlined text-primary scale-110">star</span>
+<span class="material-symbols-outlined text-primary scale-110">star</span>
+<span class="material-symbols-outlined text-primary scale-110">star_half</span>
+</div>
+<span class="font-label text-[10px] uppercase tracking-widest text-stone-400">4.8/5 Rated by Independent Critics</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Checkout Section -->
+<section class="bg-surface-container-low py-32">
+<div class="max-w-4xl mx-auto px-12">
+<div class="text-center mb-16 space-y-4">
+<h2 class="text-4xl font-headline font-bold text-on-surface">Secure Order Entry</h2>
+<p class="font-label text-xs tracking-[0.2em] text-stone-500 uppercase">Case File No. 402 - Acquisition Authorization</p>
+</div>
+<form class="space-y-12">
+<!-- Shipping Section -->
+<div class="space-y-8">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">local_shipping</span>
+<h3 class="text-xl font-headline text-on-surface uppercase tracking-widest">Shipping Intelligence</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label text-[10px] text-primary uppercase tracking-widest ml-1">Full Legal Name</label>
+<input class="w-full bg-surface-container border-none outline outline-1 outline-variant/15 focus:outline-primary/50 text-on-surface px-4 py-3 rounded-md transition-all font-body text-sm" placeholder="Johnathan Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] text-primary uppercase tracking-widest ml-1">Street Address</label>
+<input class="w-full bg-surface-container border-none outline outline-1 outline-variant/15 focus:outline-primary/50 text-on-surface px-4 py-3 rounded-md transition-all font-body text-sm" placeholder="123 Investigative Way" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] text-primary uppercase tracking-widest ml-1">City</label>
+<input class="w-full bg-surface-container border-none outline outline-1 outline-variant/15 focus:outline-primary/50 text-on-surface px-4 py-3 rounded-md transition-all font-body text-sm" placeholder="Washington D.C." type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] text-primary uppercase tracking-widest ml-1">Postal Code</label>
+<input class="w-full bg-surface-container border-none outline outline-1 outline-variant/15 focus:outline-primary/50 text-on-surface px-4 py-3 rounded-md transition-all font-body text-sm" placeholder="20001" type="text"/>
+</div>
+</div>
+</div>
+<!-- Payment Section -->
+<div class="space-y-8 p-8 bg-surface-container border-l-4 border-primary rounded-r-lg">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">encrypted</span>
+<h3 class="text-xl font-headline text-on-surface uppercase tracking-widest">Transaction Security</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="md:col-span-2 space-y-2">
+<label class="font-label text-[10px] text-primary uppercase tracking-widest ml-1">Card Number</label>
+<div class="relative">
+<input class="w-full bg-surface-container-high border-none outline outline-1 outline-variant/15 focus:outline-primary/50 text-on-surface px-4 py-3 rounded-md transition-all font-body text-sm" placeholder="•••• •••• •••• ••••" type="text"/>
+<span class="absolute right-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-stone-500 text-sm">credit_card</span>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] text-primary uppercase tracking-widest ml-1">Expiry</label>
+<input class="w-full bg-surface-container-high border-none outline outline-1 outline-variant/15 focus:outline-primary/50 text-on-surface px-4 py-3 rounded-md transition-all font-body text-sm" placeholder="MM/YY" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] text-primary uppercase tracking-widest ml-1">CVV</label>
+<input class="w-full bg-surface-container-high border-none outline outline-1 outline-variant/15 focus:outline-primary/50 text-on-surface px-4 py-3 rounded-md transition-all font-body text-sm" placeholder="•••" type="password"/>
+</div>
+</div>
+<div class="flex items-center gap-3 text-stone-500">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<p class="font-label text-[9px] uppercase tracking-widest">Encrypted connection verified via SHA-256 Protocol</p>
+</div>
+</div>
+<div class="pt-8">
+<button class="w-full burnished-gold text-on-primary py-6 rounded-md font-body font-bold text-lg uppercase tracking-[0.2em] shadow-xl hover:scale-[1.01] active:scale-[0.98] transition-all duration-300" type="submit">
+                            Complete Purchase
+                        </button>
+<p class="text-center mt-6 font-label text-[9px] text-stone-500 uppercase tracking-widest">By clicking "Complete Purchase" you agree to the Terms of Editorial Acquisition</p>
+</div>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer Implementation -->
+<footer class="w-full mt-32 bg-emerald-950 border-t border-white/5">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-24 max-w-screen-2xl mx-auto">
+<div class="space-y-6">
+<span class="text-lg font-serif text-amber-100 uppercase tracking-widest">SEREEN MORGAN-MURRAY</span>
+<p class="font-sans uppercase tracking-widest text-[10px] text-stone-500 leading-relaxed">
+                    © 2024 SEREEN MORGAN-MURRAY. ALL RIGHTS RESERVED. INVESTIGATIVE EDITORIAL CASE FILE NO. 402
+                </p>
+</div>
+<div class="flex flex-col gap-4 font-sans uppercase tracking-widest text-[10px]">
+<a class="text-stone-500 hover:text-amber-100 underline underline-offset-4 transition-colors" href="#">Privacy Policy</a>
+<a class="text-stone-500 hover:text-amber-100 underline underline-offset-4 transition-colors" href="#">Terms of Service</a>
+<a class="text-stone-500 hover:text-amber-100 underline underline-offset-4 transition-colors" href="#">Press Kit</a>
+<a class="text-stone-500 hover:text-amber-100 underline underline-offset-4 transition-colors" href="#">Newsletter</a>
+</div>
+<div class="flex flex-col items-end gap-6">
+<div class="text-right">
+<span class="font-label text-[10px] text-primary uppercase tracking-widest block mb-2">Office Status</span>
+<span class="font-headline italic text-amber-100/60">Field Operations: Active</span>
+</div>
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-amber-200">
+<span class="material-symbols-outlined text-sm">mail</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-amber-200">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">shield</span>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
