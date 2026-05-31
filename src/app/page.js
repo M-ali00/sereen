@@ -44,7 +44,7 @@ export default function Home() {
           <div className="relative group">
             <div className="aspect-[4/5] bg-surface-container-high rounded-lg overflow-hidden relative">
               <Image 
-                src="/transition_desk.png"
+                src="/fda_badge_notebook.jpg"
                 alt="An FDA badge and notebook on a mahogany desk, symbolizing the transition from regulator to consultant"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -176,7 +176,7 @@ export default function Home() {
               <p className="font-headline italic text-2xl text-on-surface text-primary">Former FDA BIMO Investigator | Global GxP Consultant | Inspection Readiness Strategist</p>
               
               <div className="font-body text-base space-y-6">
-                <p>Sereen Morgan-Murray is a former U.S. FDA Bioresearch Monitoring Investigator with over 6 years of direct regulatory experience and more than 15 years in clinical research, GxP compliance, and regulatory oversight.</p>
+                <p>Sereen Morgan-Murray is a former U.S. FDA Bioresearch Monitoring (BIMO) Program Investigator with over 6 years of direct regulatory experience and more than 15 years in clinical research, GxP compliance, and regulatory oversight.</p>
                 <p>During her time at the FDA, Sereen conducted domestic and international inspections across clinical investigator sites, sponsors, CROs, IRBs, and bioequivalence programs, evaluating compliance with 21 CFR regulations and ICH GCP guidelines. Her work included high priority and for cause inspections, regulatory enforcement actions, and advising industry on achieving compliance.</p>
                 <p>Today, as the Founder of SMM Arete GxP Consulting Services, she brings that same regulatory lens to industry, helping organizations proactively identify compliance gaps, strengthen quality systems, and prepare for FDA inspections with confidence.</p>
                 <p>Sereen has led and supported over 200 inspections and audits globally, working across sponsors, CROs, and clinical sites to improve inspection readiness, data integrity, and regulatory strategy.</p>

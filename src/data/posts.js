@@ -10,7 +10,7 @@ export const posts = [
     filterCategory: 'FDA BIMO Inspections',
     content: `
       <p class="font-body text-xl text-on-surface-variant leading-relaxed mb-8 drop-cap">
-        When the FDA Bioresearch Monitoring (BIMO) investigator arrives, the dynamic of the room changes instantly. The badge isn't just a symbol of federal authority; it represents a meticulous, data-driven methodology designed to uncover the ground truth of clinical trial execution. For sponsors and Clinical Research Organizations (CROs), this moment often reveals the stark difference between presumed compliance and actual operational rigor.
+        When the FDA Bioresearch Monitoring (BIMO) Program investigator arrives, the dynamic of the room changes instantly. The badge isn't just a symbol of federal authority; it represents a meticulous, data-driven methodology designed to uncover the ground truth of clinical trial execution. For sponsors and Clinical Research Organizations (CROs), this moment often reveals the stark difference between presumed compliance and actual operational rigor.
       </p>
       
       <h3 class="font-headline text-3xl text-primary mb-6 mt-12">The Illusion of 'Audit Ready'</h3>

@@ -8,7 +8,7 @@ export default function About() {
       <section className="px-12 max-w-screen-2xl mx-auto mb-32">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           <div className="lg:col-span-7">
-            <p className="font-label text-primary tracking-[0.2em] mb-6 font-bold uppercase text-xs">Biometric Monitoring / Investigative Authority</p>
+            <p className="font-label text-primary tracking-[0.2em] mb-6 font-bold uppercase text-xs">Bioresearch Monitoring (BIMO) Program / Investigative Authority</p>
             <h1 className="font-headline text-6xl md:text-8xl font-medium tracking-tighter mb-12 text-on-surface leading-[0.9]">
               The <span className="italic text-primary">Investigative</span> Mind.
             </h1>
@@ -18,7 +18,7 @@ export default function About() {
               </p>
               <div className="space-y-4 text-lg leading-relaxed text-on-surface-variant font-light font-body">
                 <p>
-                  Sereen Morgan Murray represents the rare intersection of federal regulatory authority and strategic industry foresight. As a former FDA Bioresearch Monitoring Investigator, she has conducted both domestic and international inspections across clinical research environments, evaluating compliance with critical regulatory frameworks including 21 CFR Parts 11, 50, 54, and 312, as well as Good Clinical Practice standards.
+                  Sereen Morgan Murray represents the rare intersection of federal regulatory authority and strategic industry foresight. As a former investigator with the U.S. FDA's Bioresearch Monitoring (BIMO) Program, she has conducted both domestic and international inspections across clinical research environments, evaluating compliance with critical regulatory frameworks including 21 CFR Parts 11, 50, 54, 56, and 312, as well as Good Clinical Practice standards.
                 </p>
                 <p>
                   Her work has directly influenced the integrity, safety, and regulatory outcomes of clinical trials supporting life saving therapies. Today, she brings that same investigative precision to industry, helping organizations identify compliance gaps, strengthen oversight, and prepare for regulatory scrutiny with confidence.
@@ -52,7 +52,7 @@ export default function About() {
             <div className="space-y-6">
               <span className="material-symbols-outlined text-primary text-4xl">policy</span>
               <h3 className="font-headline text-3xl">Former FDA Authority</h3>
-              <p className="font-body text-on-surface-variant leading-relaxed">Extensive experience in FDA Bioresearch Monitoring inspections across United States and international clinical sites, with direct application of regulatory frameworks including 21 CFR Parts 11, 50, 54, and 312, and Good Clinical Practice.</p>
+              <p className="font-body text-on-surface-variant leading-relaxed">Extensive experience in FDA Bioresearch Monitoring (BIMO) Program inspections across United States and international clinical sites, with direct application of regulatory frameworks including 21 CFR Parts 11, 50, 54, 56, and 312, and Good Clinical Practice.</p>
             </div>
             <div className="space-y-6">
               <span className="material-symbols-outlined text-primary text-4xl">troubleshoot</span>
