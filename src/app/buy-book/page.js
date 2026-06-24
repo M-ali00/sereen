@@ -12,9 +12,9 @@ export default function BuyBook() {
   const [format, setFormat] = useState('hardcover');
   
   const formats = {
-    hardcover: { name: 'Hardcover Editorial Edition', price: '40.00', url: 'https://a.co/d/00Xiv5eL' },
-    paperback: { name: 'Paperback Standard Edition', price: '35.99', url: 'https://a.co/d/07OZEYqs' },
-    ebook: { name: 'Digital eBook', price: '19.99', url: 'https://a.co/d/02aMIloD' }
+    hardcover: { name: 'Hardcover Editorial Edition', price: '40.00', url: 'https://shop.ingramspark.com/b/084?params=8z0C8xq2Yl01c2YfYkjhdRw5TUTktMOpGNuN3AygLD1', label: 'Buy Hardcover' },
+    paperback: { name: 'Paperback Standard Edition', price: '35.99', url: 'https://shop.ingramspark.com/b/084?params=GMW76Tyyq7pfCn7UjKI4UUGaZVMCgDHaK1lu6Wc5beW', label: 'Buy Paperback' },
+    ebook: { name: 'Digital eBook', price: '19.99', url: 'https://a.co/d/0f8fovkw', label: 'Buy eBook' }
   };
 
   return (
@@ -92,10 +92,28 @@ export default function BuyBook() {
                 </span>
               </div>
             </div>
-            <div className="pt-8">
-              <a href={formats[format].url} target="_blank" rel="noopener noreferrer" className="inline-block px-12 py-5 burnished-gold-gradient text-on-primary font-body font-bold text-sm uppercase tracking-widest rounded-md hover:scale-[1.02] active:scale-95 transition-transform shadow-lg text-center">
-                Buy on Amazon
-              </a>
+            <div className="flex flex-col sm:flex-row gap-8 items-center pt-8">
+              <div>
+                <a href={formats[format].url} target="_blank" rel="noopener noreferrer" className="inline-block px-12 py-5 burnished-gold-gradient text-on-primary font-body font-bold text-sm uppercase tracking-widest rounded-md hover:scale-[1.02] active:scale-95 transition-transform shadow-lg text-center min-w-[240px]">
+                  {formats[format].label}
+                </a>
+              </div>
+              
+              {/* Scan to Buy QR Code */}
+              <div className="flex items-center gap-4 p-4 rounded-lg bg-surface-container-high border border-primary/20 hover:border-primary/40 transition-all duration-300 shadow-md">
+                <div className="relative p-2 bg-white rounded-md w-[80px] h-[80px] flex items-center justify-center shadow-inner">
+                  <img 
+                    src={`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(formats[format].url)}`} 
+                    alt="Scan to buy" 
+                    className="w-full h-full object-contain"
+                  />
+                  <div className="absolute inset-0 border border-primary/10 pointer-events-none rounded-md"></div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-label text-[10px] text-primary uppercase tracking-widest font-bold">Scan to Buy</span>
+                  <span className="font-body text-[11px] text-stone-400 max-w-[120px] leading-tight mt-1">Open link instantly on your mobile device</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -33,7 +33,7 @@ export default function Navbar() {
             );
           })}
         </div>
-        <Link href="/checkout" className="burnished-gold-gradient text-on-primary font-body font-semibold px-6 py-2 rounded-md transition-transform active:scale-95 text-xs uppercase tracking-wider">
+        <Link href="/buy-book" className="burnished-gold-gradient text-on-primary font-body font-semibold px-6 py-2 rounded-md transition-transform active:scale-95 text-xs uppercase tracking-wider">
           Order Now
         </Link>
       </div>
